@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Contacto - EcoSystem L.A.F</title>
+  <link rel="stylesheet" href="../css/contacto.css">
+</head>
+<body>
+
+<header class="header">
+  <img src="../recursos/logo.jpeg" class="logo" alt="EcoSystem L.A.F logo">
+  <h1>EcoSystem L.A.F - Contacto</h1>
+  <nav>
+    <a href="../index.html">Inicio</a>
+    <a href="catalogo.html">Catálogo</a>
+    <a href="carrito.html">Carrito</a>
+  </nav>
+</header>
+
+<main class="contenedor">
+  <h2>Escríbenos</h2>
+
+  <form id="formContacto" class="formulario" novalidate>
+    <div class="fila">
+      <div>
+        <label for="firstName">First Name</label>
+        <input id="firstName" type="text" required>
+      </div>
+      <div>
+        <label for="lastName">Last Name</label>
+        <input id="lastName" type="text" required>
+      </div>
+    </div>
+
+    <div class="fila">
+      <div>
+        <label for="name">Name</label>
+        <input id="name" type="text" required>
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input id="email" type="email" required>
+      </div>
+    </div>
+
+    <label for="message">Message</label>
+    <textarea id="message" required></textarea>
+
+    <div class="botones">
+      <button type="submit" class="btn">Entregar</button>
+      <button type="button" id="limpiarBtn" class="btn cancelar">Limpiar</button>
+    </div>
+
+    <p id="feedback" class="hidden" role="status" aria-live="polite"></p>
+  </form>
+</main>
+
+<footer>
+  <p>© 2025 EcoSystem L.A.F</p>
+</footer>
+
+<script src="../js/contacto.js"></script>
+</body>
+</html>

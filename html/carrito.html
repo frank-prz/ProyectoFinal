@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Carrito - EcoSystem L.A.F</title>
+  <link rel="stylesheet" href="../css/carrito.css">
+</head>
+<body>
+
+<header class="header">
+  <img src="../recursos/logo.jpeg" class="logo" alt="logo">
+  <h1>EcoSystem L.A.F - Carrito</h1>
+  <nav>
+    <a href="../index.html">Inicio</a>
+    <a href="catalogo.html">Catálogo</a>
+    <a href="carrito.html">Carrito</a>
+  </nav>
+  
+</header>
+
+<main class="contenedor">
+  <h2>Carrito de Compras</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Producto</th>
+        <th>Precio Unitario</th>
+        <th>Cantidad</th>
+        <th>Subtotal</th>
+        <th>Acción</th>
+      </tr>
+    </thead>
+    <tbody id="tablaCarrito"></tbody>
+  </table>
+
+  <h3 id="totalGeneral">Total: $0</h3>
+
+  <div class="acciones">
+    <button class="btn" id="vaciarBtn">Vaciar Carrito</button>
+    <button class="btn" id="confirmarBtn">Confirmar Compra</button>
+    <button class="btn cancelar" id="cancelarBtn">Cancelar Compra</button>
+  </div>
+</main>
+
+<script src="../js/carrito.js"></script>
+<script src="../js/seguridad.js"></script>
+
+
+</body>
+</html>

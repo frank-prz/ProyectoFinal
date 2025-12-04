@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Registro - EcoSystem L.A.F</title>
+  <link rel="stylesheet" href="../css/registro.css">
+</head>
+<body>
+
+<header class="header">
+  <img src="../recursos/logo.jpeg" class="logo">
+  <h1>EcoSystem L.A.F - Registro</h1>
+  <nav>
+    <a href="../index.html">Inicio</a>
+    <a href="login.html">Login</a>
+  </nav>
+</header>
+
+<main class="contenedor">
+  <h2>Registro de Cliente</h2>
+
+  <form id="formRegistro" class="formulario">
+    <label>Nombre Completo</label>
+    <input type="text" id="nombre" required>
+
+    <label>Correo Electrónico</label>
+    <input type="email" id="correo" required>
+
+    <label>Contraseña</label>
+    <input type="password" id="password" required>
+
+    <button type="submit" class="btn">Registrarse</button>
+  </form>
+
+  <p class="texto">
+    ¿Ya tienes cuenta?  
+    <a href="login.html">Inicia sesión aquí</a>
+  </p>
+</main>
+
+<script src="../js/registro.js"></script>
+</body>
+</html>

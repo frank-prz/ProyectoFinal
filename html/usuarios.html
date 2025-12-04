@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Usuarios - EcoSystem L.A.F</title>
+  <link rel="stylesheet" href="../css/usuarios.css">
+</head>
+<body>
+
+<header class="header">
+  <img src="../recursos/logo.jpeg" class="logo">
+  <h1>EcoSystem L.A.F - Usuarios</h1>
+  <nav>
+    <a href="../index.html">Inicio</a>
+    <a href="usuarios.html">Usuarios</a>
+    <a href="categorias.html">Categorías</a>
+    <a href="productos.html">Productos</a>
+    <a href="ganancias.html">Ganancias</a>
+  </nav>
+</header>
+
+<main class="contenedor">
+  <h2>Gestión de Usuarios</h2>
+
+  <form id="formUsuario" class="formulario">
+    <label>Nombre completo</label>
+    <input type="text" id="nombre" required>
+
+    <label>Email</label>
+    <input type="email" id="email" required>
+
+    <label>Contraseña</label>
+    <input type="password" id="password" required>
+
+
+    <button type="submit" class="btn">Guardar Usuario</button>
+  </form>
+
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Email</th>
+        <th>Rol</th>
+        <th>Fecha</th>
+        <th>Acción</th>
+      </tr>
+    </thead>
+    <tbody id="tablaUsuarios"></tbody>
+  </table>
+</main>
+
+<script src="../js/usuarios.js"></script>
+<script src="../js/seguridad.js"></script>
+<script src="../js/seguridadAdmin.js"></script>
+
+</body>
+</html>

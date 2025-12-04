@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Categorías - EcoSystem L.A.F</title>
+  <link rel="stylesheet" href="../css/categorias.css">
+</head>
+<body>
+
+<header class="header">
+  <img src="../recursos/logo.jpeg" class="logo">
+  <h1>EcoSystem L.A.F - Categorías</h1>
+  <nav>
+    <a href="../index.html">Inicio</a>
+    <a href="usuarios.html">Usuarios</a>
+    <a href="categorias.html">Categorías</a>
+    <a href="productos.html">Productos</a>
+    <a href="ganancias.html">Ganancias</a>
+  </nav>
+</header>
+
+<main class="contenedor">
+  <h2>Gestión de Categorías</h2>
+
+  <form id="formCategoria" class="formulario">
+    <label>Nombre de la Categoría</label>
+    <input type="text" id="nombreCategoria" required>
+
+    <button type="submit" class="btn">Guardar Categoría</button>
+  </form>
+
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Acción</th>
+      </tr>
+    </thead>
+    <tbody id="tablaCategorias"></tbody>
+  </table>
+</main>
+
+<script src="../js/categorias.js"></script>
+<script src="../js/seguridad.js"></script>
+<script src="../js/seguridadAdmin.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ganancias - EcoSystem L.A.F</title>
+  <link rel="stylesheet" href="../css/ganancias.css">
+</head>
+<body>
+
+<header class="header">
+  <img src="../recursos/logo.jpeg" class="logo">
+  <h1>EcoSystem L.A.F - Ganancias</h1>
+  <nav>
+    <a href="../index.html">Inicio</a>
+  </nav>
+</header>
+
+<main class="contenedor">
+
+  <h2>Reporte de Ganancias</h2>
+
+  <div class="filtros">
+    <select id="filtroMes">
+      <option value="">Todos los meses</option>
+    </select>
+
+    <select id="filtroProducto">
+      <option value="">Todos los productos</option>
+    </select>
+
+    <button class="btn" onclick="aplicarFiltros()">Consultar</button>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Fecha</th>
+        <th>Producto</th>
+        <th>Cantidad</th>
+        <th>Venta</th>
+        <th>Costo</th>
+        <th>Ganancia</th>
+      </tr>
+    </thead>
+    <tbody id="tablaGanancias"></tbody>
+  </table>
+
+  <h3 id="totalGanancias">Total Ganancias: $0</h3>
+
+</main>
+
+<script src="../js/ganancias.js"></script>
+<script src="../js/seguridad.js"></script>
+<script src="../js/seguridadAdmin.js"></script>
+
+</body>
+</html>
