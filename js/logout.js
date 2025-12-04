@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   btn.addEventListener("click", () => {
     localStorage.removeItem("usuarioActivo");
     if (window.location.pathname.includes("/html/")) {
-      window.location.replace("../html/login.html");
+      window.location.replace("login.html");
     } else {
       window.location.replace("html/login.html");
     }
